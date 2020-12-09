@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2980B9</color>
+    <color name="colorPrimaryDark">#2471A3</color>
+    <color name="colorAccent">#34495E</color>
+
+    <!--<color name="app_theme">#EAECEE</color>&lt;!&ndash;<color name="app_theme">#003366</color>&ndash;&gt;-->
+    <color name="app_theme">#2980B9</color><!--<color name="app_theme">#003366</color>-->
+    <color name="black">#34495E</color>
+    <color name="white">#ffffff</color>
+    <color name="hint">#808B96</color>
+    <color name="divider">#ABB2B9</color>
+    <color name="gray">#ABB2B9</color>
+
+    <color name="dark_blue">#3277d8</color>
+    <color name="blue">#3281da</color>
+    <color name="color_flat">#5D6D7E</color>
+    <color name="circle_gray">#707070</color>
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#fff</color>
+
+    <color name="blackTextColor">#000</color>
+
+    <color name="live">#4caf50</color>
+    <color name="finished">#ABB2B9</color>
+
+    <dimen name="grid_size">140dp</dimen>
+    <dimen name="grid_size1">160dp</dimen>
+    <dimen name="page_margin_mid">10dp</dimen>
+    <dimen name="header_text">18sp</dimen>
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_width">230dp</dimen>
+    <color name="wht">#FFFFFFFF</color>
+    <color name="black_color">#34495E</color>
+    <color name="gray_f">#EAEDED</color>
+    <color name="hint_color">#AEB6BF</color>
+    <color name="dark_gray">#FFA5A8AC</color>
+    <color name="dark">#FF222222</color>
+</resources>

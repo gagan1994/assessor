@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/page_margin_mid"
+    android:background="@drawable/rounded_white"
+    android:elevation="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/page_margin_mid">
+
+        <TextView
+            android:id="@+id/txt_evendate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="15 JUNE 2020"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/metrophobic"
+            android:textSize="10pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_below="@+id/txt_evendate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_cource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSC              : "
+                android:textColor="@color/dark_gray"
+                app:fontFamily="@font/metrophobic" />
+
+            <TextView
+                android:id="@+id/txt_ssc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_cource"
+                android:paddingLeft="@dimen/activity_margin"
+                android:text="Retail"
+                android:textColor="@color/black"
+                app:fontFamily="@font/metrophobic" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="12/02/2020"
+                android:fontFamily="@font/metrophobic"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lbl_batchno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:text="Batch No     : "
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/txt_batchno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_toRightOf="@+id/lbl_batchno"
+            android:paddingLeft="@dimen/activity_margin"
+            android:text="1937JAMH"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/lbl_tcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_batchno"
+            android:text="Question Set:"
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/txt_tcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_batchno"
+            android:layout_toRightOf="@+id/lbl_tcname"
+            android:paddingLeft="@dimen/activity_margin"
+            android:text="ODAPADA SKILL DEVELOPMENT"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/lbl_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tcname"
+            android:text="Duration      : "
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tcname"
+            android:layout_toRightOf="@+id/lbl_duration"
+            android:paddingLeft="@dimen/activity_margin"
+            android:text=""
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/lbl_exam_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tcname"
+            android:layout_alignParentRight="true"
+            android:text="2 hrs"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/txt_exam_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tcname"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/lbl_fullmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_duration"
+            android:text="Full Marks    :     "
+            android:textColor="@color/dark_gray"
+            android:visibility="gone"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_fullmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_duration"
+            android:layout_toRightOf="@+id/lbl_fullmarks"
+            android:text="100"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/txt_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_duration"
+            android:layout_alignParentRight="true"
+            android:text="40"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <TextView
+            android:id="@+id/lbl_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_duration"
+            android:layout_toLeftOf="@+id/txt_questions"
+            android:text="Questions : "
+            android:visibility="gone"
+            android:textColor="@color/black"
+            app:fontFamily="@font/metrophobic" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:layout_below="@+id/txt_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:isHideTimeBackground="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:id="@+id/cv_countdownView"
+            android:layout_marginRight="8dp"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isShowTimeBgBorder="true"
+            app:isShowMillisecond="true"
+            app:timeTextColor="@color/app_theme"
+            app:timeTextSize="16sp"
+            app:isTimeTextBold="true"
+            app:suffixGravity="bottom"
+            app:suffixTextColor="#000000"
+            app:suffixTextSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/action_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_questions"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="Start Test"
+            android:fontFamily="@font/metrophobic"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

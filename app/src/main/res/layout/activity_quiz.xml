@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="?actionBarSize"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_theme"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_theme"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Retail"
+                    android:textColor="@android:color/white" />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/cv_countdownView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:gravity="right|center"
+                    app:isHideTimeBackground="true"
+                    app:isShowMillisecond="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isTimeTextBold="true"
+                    app:suffixGravity="bottom"
+                    app:suffixTextColor="@color/white"
+                    app:suffixTextSize="12sp"
+                    app:timeTextColor="@color/white"
+                    app:timeTextSize="22sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Scoretitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".5"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="Score:"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/Score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".5"
+                    android:text="0/10"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:outlineAmbientShadowColor="@color/black"
+                android:max="100"
+                android:padding="5dp"
+                android:progress="10"
+                android:theme="@style/LinearProgressLight" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/alert"
+            android:visibility="gone"
+            android:background="#F44336"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/white"
+                android:textSize="10pt"
+                android:layout_centerInParent="true"
+                android:id="@+id/txt_attempts" />
+
+            <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/content"
+                app:rb_color="#FF928A"
+                app:rb_radius="32dp"
+                app:rb_rippleAmount="4"
+                app:rb_duration="5000"
+                app:rb_scale="6">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_margin="@dimen/activity_padding"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centerImage" />
+            </com.skyfishjy.library.RippleBackground>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/metrophobic"
+                android:padding="@dimen/margin_10"
+                android:text="Your Face is not detected"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/action_next"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/action_prev"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/prev"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/action_skip"
+        android:textColor="@color/app_theme"
+        android:fontFamily="@font/metrophobic"
+        android:textSize="8pt"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip" />
+</RelativeLayout>
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/extended_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="Next"
+            android:text="Next"
+            app:icon="@drawable/next"/>-->

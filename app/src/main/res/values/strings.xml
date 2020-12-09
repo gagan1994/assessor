@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Assessor</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="action_logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open_camera">Open Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="no_enough_permission">No enough permissions(CAMERA, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE)</string>
+    <string name="recording">Recording</string>
+    <string name="record">Record</string>
+    <string name="shot">Shot</string>
+    <string name="cancel">Cancel</string>
+    <string name="image_mode">Image Mode</string>
+    <string name="video_mode">Video Mode</string>
+    <string name="finish">Finish</string>
+    <string name="flip">Flip</string>
+    <string name="play_file">Play[%s]</string>
+    <string name="done">Done</string>
+    <string name="fill">Fill</string>
+    <string name="zoom">Zoom</string>
+    <string name="video_size">Video size</string>
+    <string name="image_size">Image size</string>
+    <string name="ratio">Ratio</string>
+    <string name="flash_auto">Auto</string>
+    <string name="flash_on">On</string>
+    <string name="flash_off">Off</string>
+    <string name="error_cannot_write">Cannot write image captured by camera.</string>
+    <string name="error_cannot_open">Cannot open camera.</string>
+    <string name="error_cannot_get_permission">Camera permission not available.</string>
+    <string name="error_not_having_camera">Your device does not have front camera.</string>
+    <string name="error_camera_permission_denied">Camera permission denied.</string>
+    <string name="btn_tittle_capture_image">Capture image</string>
+    <string name="app_record">Record Video</string>
+</resources>

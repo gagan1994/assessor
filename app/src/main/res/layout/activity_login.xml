@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_bg">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/student" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_margin="@dimen/margin_big"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/transperant_top_rounded">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/metrophobic"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/transperant_rounded">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_white"
+
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <EditText
+                        android:id="@+id/user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_margin_mid"
+                        android:drawableLeft="@drawable/username"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/app_theme"
+                        android:hint="User Name"
+                        android:inputType="text"
+                        android:textSize="10pt"
+
+                        android:imeOptions="actionNext"
+                        app:fontFamily="@font/metrophobic"
+                        android:paddingLeft="@dimen/page_margin_mid"
+                        android:paddingRight="@dimen/page_margin_mid" />
+
+                    <EditText
+                        android:id="@+id/pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_margin_mid"
+                        android:drawableLeft="@drawable/password"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/app_theme"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:textSize="10pt"
+                        android:inputType="textPassword"
+                        app:fontFamily="@font/metrophobic"
+                        android:paddingLeft="@dimen/page_margin_mid"
+                        android:paddingRight="@dimen/page_margin_mid" />
+
+                    <EditText
+                        android:id="@+id/aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_margin_mid"
+                        android:drawableLeft="@drawable/card"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/app_theme"
+                        android:hint="Aadhar No"
+                        android:textSize="10pt"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="@dimen/page_margin_mid"
+                        android:paddingRight="@dimen/page_margin_mid" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/activity_margin"
+                android:background="@drawable/transperant_bottom_rounded">
+
+                <TextView
+                    android:id="@+id/action_login"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    app:fontFamily="@font/metrophobic"
+                    android:textColor="@color/white"
+                    android:textSize="9pt"
+                    android:background="@drawable/button_black_bg"
+                    android:text="Login" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:textColor="@color/white"
+            android:text="Online Platform for student to appear exam" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

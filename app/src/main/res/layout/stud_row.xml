@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/page_margin_mid"
+    android:background="@drawable/rounded_white"
+    android:elevation="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/page_margin_mid">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_cource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SR No : "
+                android:layout_centerVertical="true"
+                android:textColor="@color/dark_gray"
+                app:fontFamily="@font/roboto" />
+
+            <TextView
+                android:id="@+id/txt_srno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lbl_cource"
+                android:paddingLeft="@dimen/activity_margin"
+                android:text="1"
+                android:textColor="@color/black"
+                app:fontFamily="@font/roboto" />
+
+            <CheckBox
+                android:id="@+id/chk_atten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Attendance"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/header"
+            android:visibility="gone"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/lbl_batchno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:text="Name       : "
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/roboto" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_toRightOf="@+id/lbl_batchno"
+            android:paddingLeft="@dimen/activity_margin"
+            android:text="Ajay Barik "
+            android:textColor="@color/black"
+            app:fontFamily="@font/roboto" />
+
+        <TextView
+            android:id="@+id/lbl_tcname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_batchno"
+            android:text="Enroll No : "
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/roboto" />
+
+        <TextView
+            android:id="@+id/txt_enrollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_batchno"
+            android:layout_toRightOf="@+id/lbl_tcname"
+            android:paddingLeft="@dimen/activity_margin"
+            android:text="23456 "
+            android:textColor="@color/black"
+            app:fontFamily="@font/roboto" />
+
+        <TextView
+            android:id="@+id/lbl_practical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_tcname"
+            android:text="Enroll No : "
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/roboto" />
+
+        <RadioGroup
+            android:id="@+id/txt_practical"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/lbl_tcname"
+            android:layout_toRightOf="@+id/lbl_tcname"
+            android:paddingLeft="@dimen/activity_margin"
+            android:textColor="@color/black"
+            android:orientation="horizontal"
+            app:fontFamily="@font/roboto">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="YES"
+                android:textColor="@color/black"
+                app:fontFamily="@font/roboto" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="No"
+                android:textColor="@color/black"
+                app:fontFamily="@font/roboto" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/action_upload"
+            style="@style/textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lbl_tcname"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="UPLOAD"
+            android:textColor="@color/whiteTextColor" />
+
+        <TextView
+            android:layout_below="@+id/txt_practical"
+            android:id="@+id/lbl_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SR No : "
+            android:background="@color/gray_f"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dark_gray"
+            app:fontFamily="@font/roboto" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

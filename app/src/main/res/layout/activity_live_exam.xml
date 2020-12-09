@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LiveExamActivity">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cv_countdownView"
+            android:layout_toRightOf="@+id/txt_qno"
+            android:fontFamily="@font/metrophobic"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:text="Retail"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="8pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/cv_countdownView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            app:isHideTimeBackground="true"
+            app:isShowMillisecond="true"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixGravity="bottom"
+            app:suffixTextColor="#000000"
+            app:suffixTextSize="12sp"
+            app:timeTextColor="#34495E"
+            app:timeTextSize="22sp"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/topbar"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/alert"
+            android:visibility="gone"
+            android:background="#F44336"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/content"
+                app:rb_color="#FF928A"
+                app:rb_radius="32dp"
+                app:rb_rippleAmount="4"
+                app:rb_duration="5000"
+                app:rb_scale="6">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="@dimen/activity_padding"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centerImage"
+                    android:src="@drawable/ic_facereg" />
+            </com.skyfishjy.library.RippleBackground>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/metrophobic"
+                android:padding="@dimen/margin_10"
+                android:text="Your Face is not detected"
+                android:textColor="@color/white" />
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_facereg"/>-->
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/action_finish"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_questions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="1dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Finish"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/action_previous"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_questions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="1dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/action_next"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_questions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="1dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/metrophobic"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>

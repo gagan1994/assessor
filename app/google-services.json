@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "598813255780",
+    "firebase_url": "https://assessor-91abe.firebaseio.com",
+    "project_id": "assessor-91abe",
+    "storage_bucket": "assessor-91abe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598813255780:android:0ba3182e9a6dae4f4fd771",
+        "android_client_info": {
+          "package_name": "com.assessor.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598813255780-fiauaq1sh8ihmlkurvcmgkm2gl05nr6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeQhqs7OS8IRdzdWNxvZo1CiCSMExTVtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598813255780-fiauaq1sh8ihmlkurvcmgkm2gl05nr6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

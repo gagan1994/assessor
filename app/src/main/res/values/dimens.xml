@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">15dp</dimen>
+    <dimen name="page_margin">25dp</dimen>
+    <dimen name="margin_big">25dp</dimen>
+
+    <dimen name="splash_text">14pt</dimen>
+    <dimen name="button_text_size">11pt</dimen>
+    <dimen name="splash_footer_text">8pt</dimen>
+    <dimen name="input_text_height">45dp</dimen>
+    <dimen name="min_margin">10dp</dimen>
+
+    <dimen name="welcom_top_padding">80dp</dimen>
+    <dimen name="bottom_navigation_padding">10dp</dimen>
+    <dimen name="bottom_navigation_icon_size">20dp</dimen>
+    <dimen name="subtext_size">12dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="splash">20dp</dimen>
+    <dimen name="button_radius_large">10dp</dimen>
+    <dimen name="textarea_height">80dp</dimen>
+    <dimen name="headerTextSize">22sp</dimen>
+</resources>
